@@ -25,8 +25,7 @@ O objetivo inicial era criar uma plataforma interativa para ajudar usuários a a
 - **Integração com a IA**: A API da OpenAI não respondeu corretamente, possivelmente devido a problemas de configuração ou limitações da chave de API.
 - **Complexidade**: O projeto foi mantido simples, sem funcionalidades avançadas ou otimizações.
 
-## Como Executar o Projeto
+#Considerações Finais
+- Este projeto foi uma experiência interessante, mas devido às limitações técnicas e à falha na integração com a IA, ele não será continuado. Foi um bom exercício para explorar conceitos básicos de desenvolvimento web, mas não está pronto para uso em produção.
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Roberote/site-academia-template.git
+- Se você quiser contribuir ou continuar o projeto, sinta-se à vontade para fazer um fork e explorar novas ideias!
