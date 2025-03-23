@@ -4,102 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness AI</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="particles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
 </head>
 <body>
+  <div id="particles-js"></div>
   <div class="container">
     <h1 class="animate__animated animate__fadeInDown">Fitness AI</h1>
     
-    <!-- Seção de Treinos -->
-    <h2 class="animate__animated animate__fadeInLeft">Treinos</h2>
-    <ul id="workouts" class="animate__animated animate__fadeInLeft">
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="flexoes">
-        <span class="checkmark"></span>
-        Flexões de Braço (3x12)
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="remada">
-        <span class="checkmark"></span>
-        Remada com Haltere (3x10)
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="elevacao">
-        <span class="checkmark"></span>
-        Elevação Lateral (3x12)
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="rosca">
-        <span class="checkmark"></span>
-        Rosca Direta (3x10)
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="abdominais">
-        <span class="checkmark"></span>
-        Abdominais Supra (3x15)
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="prancha">
-        <span class="checkmark"></span>
-        Prancha (3x30s)
-      </label></li>
-    </ul>
-
-    <!-- Seção de Refeições -->
-    <h2 class="animate__animated animate__fadeInRight">Refeições</h2>
-    <ul id="meals" class="animate__animated animate__fadeInRight">
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="cafe">
-        <span class="checkmark"></span>
-        Café da Manhã
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="lanche-manha">
-        <span class="checkmark"></span>
-        Lanche da Manhã
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="almoco">
-        <span class="checkmark"></span>
-        Almoço
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="lanche-tarde">
-        <span class="checkmark"></span>
-        Lanche da Tarde
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="jantar">
-        <span class="checkmark"></span>
-        Jantar
-      </label></li>
-      <li><label class="checkbox-container">
-        <input type="checkbox" id="ceia">
-        <span class="checkmark"></span>
-        Ceia
-      </label></li>
-    </ul>
-
-    <!-- Botão para Gerar Relatório -->
-    <button id="generate-report" class="animate__animated animate__fadeInUp">Gerar Relatório</button>
-
-    <!-- Resultado Detalhado -->
-    <div id="report" class="report animate__animated animate__fadeInUp"></div>
-
     <!-- Gráfico de Progresso -->
-    <canvas id="progressChart"></canvas>
+    <div class="chart-container animate__animated animate__fadeInLeft">
+      <canvas id="progressChart"></canvas>
+    </div>
 
     <!-- Chat com IA -->
-    <div id="chat" class="chat animate__animated animate__fadeInUp">
+    <div id="chat" class="chat animate__animated animate__fadeInRight">
       <h2>Fitness AI</h2>
       <div id="chat-output"></div>
       <input type="text" id="chat-input" placeholder="Pergunte à IA...">
-      <button id="send-message">Enviar</button>
+      <button id="send-message" class="animate__animated animate__pulse">Enviar</button>
     </div>
+
+    <!-- Botão para Calendário -->
+    <a href="calendar.html" class="calendar-button animate__animated animate__fadeInUp">Ver Calendário</a>
   </div>
 
   <script src="script.js"></script>
+  <script src="chat.js"></script>
 </body>
 </html>
